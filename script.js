@@ -8,6 +8,9 @@ function showTab(id, btn) {
 function selectPakket(card) {
   document.querySelectorAll('.pakket-select-card').forEach(c => c.classList.remove('selected'));
   card.classList.add('selected');
+  const naam = card.querySelector('.psc-name');
+  const input = document.getElementById('gekozen-pakket');
+  if (naam && input) input.value = naam.textContent.trim();
 }
 
 function kiesEnScroll(id) {
