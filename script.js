@@ -19,6 +19,17 @@ function kiesEnScroll(id) {
   document.getElementById('inschrijven').scrollIntoView({ behavior: 'smooth' });
 }
 
+const dateInput = document.querySelector('input[name="geboortedatum"]');
+if (dateInput) {
+  if (!dateInput.value) dateInput.type = 'text';
+  dateInput.addEventListener('focus', function() {
+    this.type = 'date';
+  });
+  dateInput.addEventListener('blur', function() {
+    if (!this.value) this.type = 'text';
+  });
+}
+
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
 navToggle.addEventListener('click', function() {
