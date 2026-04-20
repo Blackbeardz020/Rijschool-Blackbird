@@ -131,11 +131,10 @@
     </div>
     <div class="tabs">
       <button class="active" onclick="showTab('pakketten', this)">Lespakketten</button>
-      <button onclick="showTab('examens', this)">Examens</button>
-      <button onclick="showTab('losse', this)">Losse lessen</button>
+      <button onclick="showTab('losbijkopen', this)">Los bijkopen</button>
     </div>
 
-    <div id="tab-losse" class="price-grid" style="display:none">
+    <div id="tab-losbijkopen" class="price-grid" style="display:none">
       <div class="price-card">
         <div>
           <div class="name">Proefles / Intake (60 min)</div>
@@ -151,15 +150,6 @@
       </div>
       <div class="price-card">
         <div>
-          <div class="name">Uitgebreide Rijles (90 min)</div>
-        </div>
-        <div class="price">€97,50</div>
-      </div>
-    </div>
-
-    <div id="tab-examens" class="price-grid" style="display:none">
-      <div class="price-card">
-        <div>
           <div class="name">Tussentijdse toets (TTT)</div>
           <div class="desc">Proefexamen bij CBR, 50% hogere slagingskans</div>
         </div>
@@ -167,120 +157,112 @@
       </div>
       <div class="price-card">
         <div>
+          <div class="name">Theoriepakket</div>
+          <div class="desc">Volledig theoriepakket voor jouw examen</div>
+        </div>
+        <div class="price">€79,-</div>
+      </div>
+      <div class="price-card">
+        <div>
           <div class="name">Praktijkexamen</div>
-          <div class="desc">Optimale voorbereiding voor het afrijden</div>
+          <div class="desc">Losse praktijkexamen zonder lessenreeks</div>
         </div>
         <div class="price">€350,-</div>
       </div>
       <div class="price-card">
         <div>
-          <div class="name">BNOR (staatsexamen)</div>
-          <div class="desc">Kalm en zelfverzekerd je rijbewijs halen</div>
+          <div class="name">BNOR / Faalangstexamen</div>
+          <div class="desc">Staatsexamen of examen met extra begeleiding</div>
         </div>
         <div class="price">€375,-</div>
-      </div>
-      <div class="price-card">
-        <div>
-          <div class="name">Faalangst examen</div>
-          <div class="desc">Extra tijd en begeleiding om ontspannen te slagen</div>
-        </div>
-        <div class="price">€425,-</div>
       </div>
     </div>
 
     <div id="tab-pakketten" class="pakket-grid">
 
-      <!-- Instappakket -->
+      <!-- 10 uur -->
       <div class="pakket-card">
         <div class="card-header">
           <div class="card-price">
             <span class="euro">€</span>
-            <span class="amount">1.595</span>
+            <span class="amount">950</span>
             <span class="label">Eenmalig</span>
           </div>
         </div>
         <div class="card-body">
-          <div class="card-name">Instappakket</div>
-          <div class="card-desc">Voor leerlingen die al enige rijervaring hebben of eerder hebben gelest.</div>
+          <div class="card-name">10 uur</div>
+          <div class="card-desc">Ideaal voor leerlingen met rijervaring die snel examen willen doen.</div>
           <ul class="feature-list">
+            <li><span class="feat-label">10 rijlessen</span><span class="feat-val">60 min</span></li>
             <li><span class="feat-label">Praktijkexamen</span><span class="feat-check">✔</span></li>
-            <li><span class="feat-label">Tussentijdse toets</span><span class="feat-check">✔</span></li>
-            <li><span class="feat-label">Duur van één les</span><span class="feat-val">90 min</span></li>
-            <li><span class="feat-label">Aantal lessen</span><span class="feat-val">10</span></li>
           </ul>
-          <a href="#inschrijven" class="boek-btn" onclick="kiesEnScroll('psc-instappakket')">BOEK NU</a>
+          <a href="#inschrijven" class="boek-btn" onclick="kiesEnScroll('psc-10uur')">BOEK NU</a>
         </div>
       </div>
 
-      <!-- Standaardpakket -->
+      <!-- 20 uur -->
       <div class="pakket-card">
         <div class="card-header">
           <div class="card-price">
             <span class="euro">€</span>
-            <span class="amount">2.495</span>
+            <span class="amount">1.525</span>
             <span class="label">Eenmalig</span>
           </div>
         </div>
         <div class="card-body">
-          <div class="card-name">Standaardpakket</div>
-          <div class="card-desc">Een gebalanceerd pakket voor leerlingen die doelgericht naar het rijexamen willen werken.</div>
+          <div class="card-name">20 uur</div>
+          <div class="card-desc">Een gebalanceerd pakket voor leerlingen die doelgericht naar het rijexamen willen.</div>
           <ul class="feature-list">
+            <li><span class="feat-label">20 rijlessen</span><span class="feat-val">60 min</span></li>
             <li><span class="feat-label">Praktijkexamen</span><span class="feat-check">✔</span></li>
-            <li><span class="feat-label">Tussentijdse toets</span><span class="feat-check">✔</span></li>
-            <li><span class="feat-label">Duur van één les</span><span class="feat-val">90 min</span></li>
-            <li><span class="feat-label">Aantal lessen</span><span class="feat-val">20</span></li>
           </ul>
-          <a href="#inschrijven" class="boek-btn" onclick="kiesEnScroll('psc-standaardpakket')">BOEK NU</a>
+          <a href="#inschrijven" class="boek-btn" onclick="kiesEnScroll('psc-20uur')">BOEK NU</a>
         </div>
       </div>
 
-      <!-- Pluspakket — POPULAIR -->
+      <!-- 30 uur — POPULAIR -->
       <div class="pakket-card featured">
         <div class="ribbon">Populair</div>
         <div class="card-header">
           <div class="card-price">
             <span class="euro">€</span>
-            <span class="amount">2.945</span>
+            <span class="amount">2.125</span>
             <span class="label">Eenmalig</span>
           </div>
         </div>
         <div class="card-body">
-          <div class="card-name">Pluspakket</div>
+          <div class="card-name">30 uur</div>
           <div class="card-desc">Voor leerlingen die extra zekerheid willen voordat zij praktijkexamen doen.</div>
           <ul class="feature-list">
+            <li><span class="feat-label">30 rijlessen</span><span class="feat-val">60 min</span></li>
             <li><span class="feat-label">Praktijkexamen</span><span class="feat-check">✔</span></li>
-            <li><span class="feat-label">Tussentijdse toets</span><span class="feat-check">✔</span></li>
-            <li><span class="feat-label">Duur van één les</span><span class="feat-val">90 min</span></li>
-            <li><span class="feat-label">Aantal lessen</span><span class="feat-val">25</span></li>
           </ul>
-          <a href="#inschrijven" class="boek-btn" onclick="kiesEnScroll('psc-pluspakket')">BOEK NU</a>
+          <a href="#inschrijven" class="boek-btn" onclick="kiesEnScroll('psc-30uur')">BOEK NU</a>
         </div>
       </div>
 
-      <!-- Compleetpakket -->
+      <!-- 40 uur -->
       <div class="pakket-card">
         <div class="card-header">
           <div class="card-price">
             <span class="euro">€</span>
-            <span class="amount">3.345</span>
+            <span class="amount">2.725</span>
             <span class="label">Eenmalig</span>
           </div>
         </div>
         <div class="card-body">
-          <div class="card-name">Compleetpakket</div>
+          <div class="card-name">40 uur</div>
           <div class="card-desc">Een uitgebreid pakket voor leerlingen die vanaf de basis willen leren rijden.</div>
           <ul class="feature-list">
+            <li><span class="feat-label">40 rijlessen</span><span class="feat-val">60 min</span></li>
             <li><span class="feat-label">Praktijkexamen</span><span class="feat-check">✔</span></li>
-            <li><span class="feat-label">Tussentijdse toets</span><span class="feat-check">✔</span></li>
-            <li><span class="feat-label">Duur van één les</span><span class="feat-val">90 min</span></li>
-            <li><span class="feat-label">Aantal lessen</span><span class="feat-val">30</span></li>
           </ul>
-          <a href="#inschrijven" class="boek-btn" onclick="kiesEnScroll('psc-compleetpakket')">BOEK NU</a>
+          <a href="#inschrijven" class="boek-btn" onclick="kiesEnScroll('psc-40uur')">BOEK NU</a>
         </div>
       </div>
 
-      <!-- Kickstart Pakket — ACTIE (spans 2 columns) -->
-      <div class="pakket-card" style="grid-column: span 2; border: 2px solid #BE0000;">
+      <!-- Kickstart Pakket — ACTIE -->
+      <div class="pakket-card" style="grid-column: 1 / -1; border: 2px solid #BE0000;">
         <div class="ribbon" style="background:#BE0000;">Actie</div>
         <div class="fomo-bar">
           <span class="pulse"></span>
@@ -288,31 +270,28 @@
         </div>
         <div class="card-header" style="background:#fff7f7; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
           <div>
-            <div style="font-size:0.75rem; font-weight:700; color:#BE0000; letter-spacing:1px; text-transform:uppercase; margin-bottom:0.5rem;">Tijdelijke Actie — 30-lessenpakket</div>
+            <div style="font-size:0.75rem; font-weight:700; color:#BE0000; letter-spacing:1px; text-transform:uppercase; margin-bottom:0.5rem;">Tijdelijke Actie — 30-uurpakket</div>
             <div class="card-price">
               <span class="euro">€</span>
-              <span class="amount">2.995</span>
+              <span class="amount">1.880</span>
               <span class="label">Actieprijs</span>
             </div>
           </div>
           <div style="text-align:right; padding-right:2rem;">
-            <div style="font-size:0.85rem; color:#9ca3af; text-decoration:line-through;">Normale waarde: €3.424</div>
-            <div style="font-size:1rem; font-weight:700; color:#16a34a;">Besparing: €429</div>
+            <div style="font-size:1rem; font-weight:700; color:#16a34a;">Besparing: €324</div>
           </div>
         </div>
         <div class="card-body" style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
           <div>
-            <div class="card-name">Kickstart Pakket (30 lessen)</div>
-            <div class="card-desc" style="margin-bottom:0">Profiteer nu van een scherpe actieprijs op ons populaire 30-lessenpakket.</div>
+            <div class="card-name">Kickstart Pakket (30 uur)</div>
+            <div class="card-desc" style="margin-bottom:0">Profiteer nu van een scherpe actieprijs op ons populaire 30-uurpakket.</div>
           </div>
           <div>
             <ul class="feature-list" style="margin-bottom:1rem">
-              <li><span class="feat-label">30 rijlessen van 90 min (45 uur)</span><span class="feat-check">✔</span></li>
-              <li><span class="feat-label">Tussentijdse toets (50% hogere slagingskans)</span><span class="feat-check">✔</span></li>
+              <li><span class="feat-label">30 rijlessen van 60 min</span><span class="feat-check">✔</span></li>
               <li><span class="feat-label">Praktijkexamen inbegrepen</span><span class="feat-check">✔</span></li>
-              <li><span class="feat-label">Persoonlijk lesplan op maat</span><span class="feat-check">✔</span></li>
-              <li><span class="feat-label">Geen inschrijfkosten</span><span class="feat-check">✔</span></li>
               <li><span class="feat-label">Gratis theoriepakket t.w.v. €79</span><span class="feat-check">✔</span></li>
+              <li><span class="feat-label">Geen inschrijfkosten</span><span class="feat-check">✔</span></li>
             </ul>
             <a href="#inschrijven" class="boek-btn" onclick="kiesEnScroll('psc-kickstart')">PROFITEER NU</a>
           </div>
@@ -376,35 +355,30 @@
             <div class="psc-price">€65,-</div>
             <div class="psc-sub">60 min</div>
           </div>
-          <div class="pakket-select-card" onclick="selectPakket(this)">
-            <div class="psc-name">Uitgebreide Rijles</div>
-            <div class="psc-price">€97,50</div>
-            <div class="psc-sub">90 min</div>
+          <div class="pakket-select-card" id="psc-10uur" onclick="selectPakket(this)">
+            <div class="psc-name">10 uur</div>
+            <div class="psc-price">€950,-</div>
+            <div class="psc-sub">10 lessen + praktijkexamen</div>
           </div>
-          <div class="pakket-select-card" id="psc-instappakket" onclick="selectPakket(this)">
-            <div class="psc-name">Instappakket</div>
-            <div class="psc-price">€1.595,-</div>
-            <div class="psc-sub">10 lessen + examen + TTT</div>
+          <div class="pakket-select-card" id="psc-20uur" onclick="selectPakket(this)">
+            <div class="psc-name">20 uur</div>
+            <div class="psc-price">€1.525,-</div>
+            <div class="psc-sub">20 lessen + praktijkexamen</div>
           </div>
-          <div class="pakket-select-card" id="psc-standaardpakket" onclick="selectPakket(this)">
-            <div class="psc-name">Standaardpakket</div>
-            <div class="psc-price">€2.495,-</div>
-            <div class="psc-sub">20 lessen + examen + TTT</div>
+          <div class="pakket-select-card" id="psc-30uur" onclick="selectPakket(this)">
+            <div class="psc-name">30 uur</div>
+            <div class="psc-price">€2.125,-</div>
+            <div class="psc-sub">30 lessen + praktijkexamen</div>
           </div>
-          <div class="pakket-select-card" id="psc-pluspakket" onclick="selectPakket(this)">
-            <div class="psc-name">Pluspakket</div>
-            <div class="psc-price">€2.945,-</div>
-            <div class="psc-sub">25 lessen + examen + TTT</div>
-          </div>
-          <div class="pakket-select-card" id="psc-compleetpakket" onclick="selectPakket(this)">
-            <div class="psc-name">Compleetpakket</div>
-            <div class="psc-price">€3.345,-</div>
-            <div class="psc-sub">30 lessen + examen + TTT</div>
+          <div class="pakket-select-card" id="psc-40uur" onclick="selectPakket(this)">
+            <div class="psc-name">40 uur</div>
+            <div class="psc-price">€2.725,-</div>
+            <div class="psc-sub">40 lessen + praktijkexamen</div>
           </div>
           <div class="pakket-select-card" id="psc-kickstart" onclick="selectPakket(this)">
             <div class="psc-name">Kickstart Pakket 🔥</div>
-            <div class="psc-price">€2.995,-</div>
-            <div class="psc-sub">30 lessen + examen + TTT— Actie!</div>
+            <div class="psc-price">€1.880,-</div>
+            <div class="psc-sub">30 uur + examen + theorie — Actie!</div>
           </div>
         </div>
 
